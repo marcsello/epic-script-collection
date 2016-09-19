@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# device address in rfkill
-WIFI_DEV_ID=1
+# device address in rfkill (default is usually 0)
+WIFI_DEV_ID=0
 # device alias of the wifi device (wlan0)
 WIFI_DEV_ALIAS=wlan0
 # seconds to wait after unblocking device
