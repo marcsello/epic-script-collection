@@ -1,5 +1,5 @@
-# wifi-activator
-Bash script to help activating wifi
+# Epic Wifi activator script by Marcsello
+Bash script to help activating an apparently stuck wifi device
 
 Designed and tested on Debian 8.5
 
