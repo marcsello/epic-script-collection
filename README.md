@@ -8,4 +8,5 @@ Requirements:
  * rfkill (apt install rfkill)
 
 *Run as root!*
+
 *Before first run check and/or change preferences at the begginning of the file*
