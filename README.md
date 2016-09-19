@@ -7,4 +7,4 @@ Requirements:
  * ifconfig (built in on Debian)
  * rfkill (apt install rfkill)
 
-[b]Run as root![/b]
+*Run as root!*
