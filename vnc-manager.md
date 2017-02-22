@@ -6,6 +6,11 @@ Designed and tested on Debian 8.5
 ### Requirements:
  * tightvncserver
  
+### Download:
+To download only this single script, use this link:  
+https://raw.githubusercontent.com/marcsello/epic-script-collection/master/vnc-manager.sh
+
+ 
 **This user will use the current user's desktop**
 
 *Before first run check and/or change preferences at the begginning of the file*
