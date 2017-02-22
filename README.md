@@ -1,12 +1,11 @@
-# Epic Wifi activator script by Marcsello
-Bash script to help activating an apparently stuck wifi device
+# Epic (Bash) Script Collection by Marcsello
 
-Designed and tested on Debian 8.5
+_This is a small selection of scripts I made to make my life easier. They are all single file scripts and they do not deserve their own repo (well.. anymore)_
 
-Requirements:
- * ifconfig (built in on Debian)
- * rfkill (apt install rfkill)
+### There they are: ###
+* **[wifi-activator](https://github.com/marcsello/epic-script-collection/blob/master/wifi-activator.md)**
+  * Small script helping un-stuck a stuck wifi device
+* **[vnc-manager](https://github.com/marcsello/epic-script-collection/blob/master/vnc-manager.md)**
+  * Small script to start/stop multiple thightvnc servers
 
-*Run as root!*
-
-*Before first run check and/or change preferences at the begginning of the file*
+(Every Script have it's own readme file)
