@@ -7,5 +7,7 @@ _This is a small selection of scripts I made to make my life easier. They are al
   * Small script helping un-stuck a stuck wifi device
 * **[vnc-manager](https://github.com/marcsello/epic-script-collection/blob/master/vnc-manager.md)**
   * Small script to start/stop multiple thightvnc servers
+* **[service_watchdog](https://github.com/marcsello/epic-script-collection/blob/master/service_watchdog.md)**
+  * Service Watchdog script with failure reporting
 
 (Every Script have it's own readme file)
