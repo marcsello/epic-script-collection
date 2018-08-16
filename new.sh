@@ -17,7 +17,23 @@ function new_py {
 
 }
 
+function check_file {
 
+
+	if [[ -f "$1" ]]; then
+
+		echo "The file you want to create already exists: $1"
+		printf "Do you want to overwrite it? "
+		read -N 1 answer
+		echo # newline
+
+		[[ "$answer" != "y" ]] && return 1
+
+	fi
+
+	return 0
+
+}
 
 
 
@@ -25,17 +41,21 @@ if [[ "$#" -eq 1 ]]; then # by the file's extension
 
 	ext=$(rev <<< "$1" | cut -d . -f 1 | rev)
 
+	if check_file "$1"; then
 
-	case $ext in
-	py)
-		new_py $1
-	;;
-	sh)
-		new_sh $1
-	;;
-	*)
-		touch $1
-	esac
+
+		case $ext in
+		py)
+			new_py $1
+		;;
+		sh)
+			new_sh $1
+		;;
+		*)
+			touch $1
+		esac
+
+	fi
 
 
 	openfile="$1"
@@ -51,14 +71,18 @@ elif [[ "$#" -gt 1 ]]; then # first argument is type
 
 	while [[ $# -gt 0 ]]; do
 
-		case $type in
-			python|py)
-				new_py $1
-			;;
-			bash|sh)
-				new_sh $1
-			;;
-		esac
+		if check_file "$1"; then
+
+			case $type in
+				python|py)
+					new_py $1
+				;;
+				bash|sh)
+					new_sh $1
+				;;
+			esac
+
+		fi
 		shift
 	done
 
@@ -81,6 +105,9 @@ else
 
 
 fi
+
+
+
 
 
 if [[ "$openfile" != "" ]]; then
