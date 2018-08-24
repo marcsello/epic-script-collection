@@ -9,5 +9,7 @@ _This is a small selection of scripts I made to make my life easier. They are al
   * Small script to start/stop multiple thightvnc servers
 * **[service_watchdog](https://github.com/marcsello/epic-script-collection/blob/master/doc/service_watchdog.md)**
   * Service Watchdog script with failure reporting
+* **[new](https://github.com/marcsello/epic-script-collection/blob/master/doc/new.md)**
+  * Script to create new files with shebang already added
 
 (Every Script have it's own readme file in the doc directory)
